@@ -1,5 +1,6 @@
 body {
   font-family: Arial, sans-serif;
+<<<<<<< HEAD
   background-color: #ffffff;
   color: #000000;
   margin: 0;
@@ -38,6 +39,13 @@ body {
   gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
+=======
+  background-color: #0b2e13;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+>>>>>>> d24c14e99f5f18ad1aa6df41127a734373a1aa8b
 }
 
 h1 {
@@ -49,7 +57,11 @@ form {
   margin-top: 30px;
   display: inline-block;
   text-align: left;
+<<<<<<< HEAD
   background-color: #175f1b;
+=======
+  background-color: #144d2b;
+>>>>>>> d24c14e99f5f18ad1aa6df41127a734373a1aa8b
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
@@ -78,12 +90,15 @@ input[type="text"] {
 .dificultad-opcion {
   cursor: pointer;
   transition: transform 0.2s ease;
+<<<<<<< HEAD
   max-width: 150px;
   /* Limita el tamaño horizontal */
   max-height: 150px;
   /* Limita el tamaño vertical */
   object-fit: cover;
   border-radius: 8px;
+=======
+>>>>>>> d24c14e99f5f18ad1aa6df41127a734373a1aa8b
 }
 
 .dificultad-opcion:hover {
@@ -92,6 +107,7 @@ input[type="text"] {
 
 .dificultad-opcion.selected {
   outline: 3px solid #4caf50;
+<<<<<<< HEAD
 }
 
 .dificultad-contenedor {
@@ -106,6 +122,9 @@ input[type="text"] {
   font-weight: bold;
   color: #fff;
   text-align: center;
+=======
+  border-radius: 8px;
+>>>>>>> d24c14e99f5f18ad1aa6df41127a734373a1aa8b
 }
 
 button[type="submit"] {
@@ -123,6 +142,7 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #45a049;
 }
+<<<<<<< HEAD
 
 .mano-container {
   display: flex;
@@ -241,3 +261,5 @@ button:hover {
   text-align: center;
   box-shadow: 0 0 10px black;
 }
+=======
+>>>>>>> d24c14e99f5f18ad1aa6df41127a734373a1aa8b

@@ -77,5 +77,4 @@ describe('JuegoService', () => {
     const resultado = service.verificarVictoriaPorCaida(puntosAntes, puntosGanados);
     expect(resultado).toBe(false);
   });
-
 });
