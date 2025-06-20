@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Juego del 40</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+
+<body>
+  <h1>El Juego del 40</h1>
+
+  <form id="formulario-inicio" action="juego.html" method="get">
+    <label for="nombre">Nombre del jugador:</label>
+    <input type="text" id="nombre" name="nombre" required />
+
+    <label>Dificultad:</label>
+    <div class="dificultad-imagenes">
+      <div class="dificultad-contenedor">
+        <div class="dificultad-label">Fácil: El Shunsho</div>
+        <img src="img/shunsho.png" alt="Fácil" class="dificultad-opcion selected" data-value="facil" />
+      </div>
+      <div class="dificultad-contenedor">
+        <div class="dificultad-label">Media: El Casual</div>
+        <img src="img/casual.png" alt="Media" class="dificultad-opcion" data-value="media" />
+      </div>
+      <div class="dificultad-contenedor">
+        <div class="dificultad-label">Difícil: El Marido</div>
+        <img src="img/marido.png" alt="Difícil" class="dificultad-opcion" data-value="dificil" />
+      </div>
+    </div>
+
+    <!-- Input oculto para enviar la dificultad seleccionada -->
+    <input type="hidden" id="dificultad" name="dificultad" value="facil" />
+
+    <button type="submit">Iniciar Partida</button>
+  </form>
+
+  <script>
+    const opciones = document.querySelectorAll('.dificultad-opcion');
+    const inputDificultad = document.getElementById('dificultad');
+
+    opciones.forEach(opcion => {
+      opcion.addEventListener('click', () => {
+        opciones.forEach(img => img.classList.remove('selected'));
+        opcion.classList.add('selected');
+        inputDificultad.value = opcion.getAttribute('data-value');
+      });
+    });
+  </script>
+</body>
+
+</html>

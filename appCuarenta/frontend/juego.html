@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Partida - El Juego del 40</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+
+<body>
+  <div class="juego-container">
+
+    <!-- Máquina -->
+    <div class="zona-maquina">
+      <div id="nombre-maquina" class="nombre">Máquina:</div>
+      <div id="mano-maquina" class="mano"></div>
+    </div>
+
+    <!-- Mesa al centro -->
+    <div id="mesa" class="mesa">
+      <!-- Aquí se mostrarán las cartas jugadas en la mesa -->
+    </div>
+
+    <!-- Jugador -->
+    <div class="zona-jugador">
+      <div id="mano-jugador" class="mano"></div>
+      <div id="nombre-jugador" class="nombre">Jugador:</div>
+    </div>
+
+    <!-- Mensaje dinámico -->
+    <div id="mensaje" class="mensaje-juego"></div>
+
+    <!-- Botones finales -->
+    <div class="botones-final">
+      <button id="btn-volver" onclick="window.location.href='index.html'">Volver al inicio</button>
+      <button id="btn-revancha" style="display:none;">Revancha</button>
+    </div>
+
+    <div class="header">
+      <div id="estado-juego" class="estado-juego">
+        <div class="info-jugador">
+          <strong id="nombre-jugador">Jugador:</strong>
+          <div id="puntos-jugador">Puntos: 0</div>
+        </div>
+
+        <div class="info-centro">
+          <div>Mano: <span id="mano-actual">1</span></div>
+          <div>Rondas jugadas: <span id="rondas-jugadas">1</span></div>
+        </div>
+
+        <div class="info-maquina">
+          <strong id="nombre-maquina">Máquina:</strong>
+          <div id="puntos-maquina">Puntos: 0</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="mensaje-puntos-captura" class="mensaje-final" style="display: none;"></div>
+  
+  <script src="scripts/juego.js"></script>
+</body>
+
+</html>
