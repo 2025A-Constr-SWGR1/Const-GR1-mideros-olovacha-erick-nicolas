@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Clean Code</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div>
+        <h1>Calculadora Clean Code</h1>
+        <p><b>Integrantes:</b> <br>Mideros Erick <br>Posso Martín</p>
+    </div>
+    <div class="calculadora">
+        <h2>Calculadora</h2>
+        <input id="input1" type="number" placeholder="Número 1" />
+        <input id="input2" type="number" placeholder="Número 2" />
+        <div class="botones">
+            <button onclick="operar('+')">+</button>
+            <button onclick="operar('-')">−</button>
+            <button onclick="operar('*')">×</button>
+            <button onclick="operar('/')">÷</button>
+        </div>
+        <div class="resultado" id="resultado"></div>
+    </div>
+    <script src="calculadora.js"></script>
+</body>
+
+</html>

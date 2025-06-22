@@ -1,0 +1,36 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculadora {
+    background: white;
+    padding: 2em;
+    width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ccc;
+    text-align: center;
+}
+
+input {
+    width: 45%;
+    padding: 0.5em;
+    margin: 0.5em 2%;
+    font-size: 1em;
+}
+
+.botones button {
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    font-size: 1.2em;
+}
+
+.resultado {
+    margin-top: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
