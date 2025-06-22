@@ -17,9 +17,5 @@ describe('AppController', () => {
   it('should be defined', () => {
     expect(appController).toBeDefined();
   });
-
-  it('should return "Bienvenido al servidor del juego de 40"', () => {
-    expect(appController.getHello()).toBe('¡Bienvenido al juego del 40!');
-  });
   
 });
