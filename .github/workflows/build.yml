@@ -1,0 +1,21 @@
+name: Node Build
+run-name: Build nodejs app
+on: [push]
+jobs:
+  build:
+    runs-on: [self-hosted]
+    steps:
+      - name: Descargar el repo
+        uses: actions/checkout@v4
+      - name: Configurar Nodejs
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+      - name: Instalar dependencias
+        working-directory: ./calculadora
+        run: |
+          npm ci
+      - name: Compilar el aplicativo
+        working-directory: ./calculadora
+        run: |
+          npm run build
