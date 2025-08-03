@@ -1,0 +1,11 @@
+{
+  "name": "2025a-swgr1-enmo-multiplicacion",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Erick Nicolas Mideros Olovacha",
+  "license": "ISC",
+  "description": ""
+}

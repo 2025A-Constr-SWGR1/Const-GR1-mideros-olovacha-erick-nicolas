@@ -1,0 +1,11 @@
+{
+  "name": "2025a-swgr1-mapc-suma",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Martin Alejandro Posso Carrasquilla",
+  "license": "ISC",
+  "description": ""
+}
